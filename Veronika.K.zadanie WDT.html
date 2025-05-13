@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika Kliment- Životopis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* definicia farieb*/
+        :root {
+            --dark-blue: #131842;
+            --coral: #E68369;
+            --light-pink: #ECCEAE;
+            --cream: #FBF6E2;
+        }
+        /*konzistentnosť štýlov v rôznych prehliadačoch*/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /*definícia štýlu pre body stránky*/
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--cream);
+            color: var(--dark-blue);
+            padding: 2rem;
+            position: relative;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            background-color: white;
+            position: relative;
+        }
+        /*nadpisy*/
+        h1, h2 {
+            color: var(--dark-blue);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            border-bottom: 2px solid var(--coral);
+            padding-bottom: 0.3rem;
+        }
+        /* definovaná medzera*/
+        .section {
+            margin-top: 1.5rem;
+        }
+        /*zoznam*/
+        ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+        /*kontaktné údaje*/
+        .contact {
+            margin-bottom: 2rem;
+        }
+        .contact p {
+            margin: 0.25rem 0;
+        }
+        /*definícia štýlu v menu */
+        nav {
+            position: fixed;
+            top: 1rem;
+            right: 2rem;
+            background: var(--light-pink);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        /*hover pre menu*/
+        nav a {
+            display: block;
+            margin: 0.3rem 0;
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--coral);
+            text-decoration: underline;
+        }
+        /*fotka*/
+        .profile-pic {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#O mne">O mne</a>
+    <a href="#skusenosti">Skúsenosti</a>
+    <a href="#vzdelanie">Vzdelanie</a>
+    <a href="#zrucnosti">Zručnosti</a>
+</nav>
+
+
+<div class="container">
+    <img src="fotka.png" alt="Profilf" class="profile-pic">
+    <h1>Veronika Kliment</h1>
+
+
+    <div class="contact">
+        <p>Email: klim@icloud.com</p>
+        <p>Telefón: 0949161548</p>
+        <p>Adresa: Medzilaborce</p>
+    </div>
+
+    <div id="O mne" class="section">
+        <h2>O mne</h2>
+        <p>Mám skúsenosť s komunikáciou s dodávateľmi, tvorbou reportov, riešením reklamácií a podporou obchodných operácií. Vďaka svojim analytickým schopnostiam a zodpovednému prístupu dokážem efektívne spracovávať technickú dokumentáciu. Vo voľnom čase sa venujem ďalšiemu vzdelávaniu a záhradkárčeniu.</p>
+    </div>
+
+    <div id="skusenosti" class="section">
+        <h2>Pracovné skúsenosti</h2>
+        <h3>Assistant Category Manager | Kúpim všetko s.r.o. | 06/2024 – súčasnosť</h3>
+        <ul>
+            <li>Komunikácia s dodávateľmi a vyjednávanie podmienok</li>
+            <li>Spracovanie a evidencia faktúr</li>
+            <li>Tvorba reportov a analýza dát</li>
+            <li>Riešenie reklamácií a koordinácia opatrení</li>
+            <li>Administratívna podpora nákupného oddelenia</li>
+        </ul>
+        <h3>Sales Coordinator | SlnkoSvieti Solar Distribution | 10/2023 – 04/2024</h3>
+        <ul>
+            <li>B2B komunikácia a spracovanie objednávok</li>
+            <li>Tvorba technickej dokumentácie, cenových ponúk</li>
+            <li>Organizácia eventov a podpora obchodného tímu</li>
+        </ul>
+        <h3>Customer Service Specialist | SpokojnosťNadovšetko, a.s. | 06/2021 – 09/2023</h3>
+        <ul>
+            <li>Poradenstvo zákazníkom (B2B, B2C)</li>
+            <li>Implementácia GDPR, riešenie reklamácií</li>
+            <li>Vymáhanie pohľadávok</li>
+        </ul>
+    </div>
+
+    <div id="vzdelanie" class="section">
+        <h2>Vzdelanie</h2>
+        <ul>
+            <li>Paneurópska vysoká škola, Fakulta informatiky (2024 – súčasnosť)</li>
+        </ul>
+    </div>
+
+    <div id="zrucnosti" class="section">
+        <h2>Zručnosti</h2>
+        <ul>
+            <li>Komunikácia</li>
+            <li>Analytické myslenie</li>
+            <li>Prezentačné zručnosti</li>
+            <li>Organizačné schopnosti</li>
+            <li>Time management</li>
+            <li>Riešenie problémov</li>
+            <li>Stres manažment</li>
+            <li>Schopnosť pracovať v tíme</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
